@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "initVCForTabbar&lt;A&gt;(type:vcStr:title:icon:):MainTabbarVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "className">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
