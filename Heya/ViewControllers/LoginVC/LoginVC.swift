@@ -80,7 +80,6 @@ class LoginVC: BaseViewController {
             self.changeTabColor(isLogin: false)
             self.subLineView.transform = CGAffineTransform(translationX: self.subLineView.frame.width + 5.0, y: 0)
         }
-        AppUtils.showLoadingInViewController(viewController: self)
     }
     
 }

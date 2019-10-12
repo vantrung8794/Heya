@@ -85,6 +85,7 @@ class HomeVC: BaseTabViewController {
     
     @IBAction func postAction(_ sender: Any) {
         let loginVC = LoginVC(nibName: "LoginVC", bundle: nil)
+        loginVC.modalPresentationStyle = .fullScreen
         self.present(loginVC, animated: true, completion: nil)
     }
     

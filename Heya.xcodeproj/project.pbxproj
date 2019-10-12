@@ -55,6 +55,7 @@
 		D8D9866F2351E75F007EA59A /* 1301-round-cap-material-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D9866E2351E75E007EA59A /* 1301-round-cap-material-loading.json */; };
 		D8D986712351E805007EA59A /* lf30_editor_p7nm7J.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D986702351E805007EA59A /* lf30_editor_p7nm7J.json */; };
 		D8D986732351E8E8007EA59A /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D986722351E8E8007EA59A /* AppUtils.swift */; };
+		D8D986752351F1F7007EA59A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D986742351F1F7007EA59A /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,7 @@
 		D8D9866E2351E75E007EA59A /* 1301-round-cap-material-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1301-round-cap-material-loading.json"; sourceTree = "<group>"; };
 		D8D986702351E805007EA59A /* lf30_editor_p7nm7J.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_p7nm7J.json; sourceTree = "<group>"; };
 		D8D986722351E8E8007EA59A /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		D8D986742351F1F7007EA59A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E73CC4E6B27306FC353AC30A /* Pods_Heya_HeyaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heya_HeyaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -334,6 +336,7 @@
 			children = (
 				D855B5B0234C2923005A56D4 /* TabbarViewcontrollerExtension.swift */,
 				D8292403234F45D300EFBDC9 /* UIViewExtension.swift */,
+				D8D986742351F1F7007EA59A /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -701,6 +704,7 @@
 				D85A50C72350127F00612268 /* PostBO.swift in Sources */,
 				D855B5BF234C2D68005A56D4 /* StringsConst.swift in Sources */,
 				D850BE2A234B47A800DA944D /* SceneDelegate.swift in Sources */,
+				D8D986752351F1F7007EA59A /* StringExtension.swift in Sources */,
 				D855B5C1234C2DAE005A56D4 /* VCNameConst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
