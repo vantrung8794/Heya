@@ -1,0 +1,20 @@
+PODS:
+  - CenteredCollectionView (2.2.1)
+  - lottie-ios (3.1.3)
+
+DEPENDENCIES:
+  - CenteredCollectionView
+  - lottie-ios
+
+SPEC REPOS:
+  trunk:
+    - CenteredCollectionView
+    - lottie-ios
+
+SPEC CHECKSUMS:
+  CenteredCollectionView: ba6e45fb7774627890621d73c8dd7dbd33391da9
+  lottie-ios: 496ac5cea1bbf1a7bd1f1f472f3232eb1b8d744b
+
+PODFILE CHECKSUM: d2f3b8c22222dd1ee0faeaae3b7c2a670b128408
+
+COCOAPODS: 1.8.1

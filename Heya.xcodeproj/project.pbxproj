@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DA8364247F20B18F0328EF2 /* Pods_Heya_HeyaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73CC4E6B27306FC353AC30A /* Pods_Heya_HeyaUITests.framework */; };
+		A0EEE4A2B615E2749C4D86CD /* Pods_HeyaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF449EAAF92FFD914D15B8A /* Pods_HeyaTests.framework */; };
+		CA7B54D9F1DBDE81596D3BE7 /* Pods_Heya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B617A9C1FDAF42B2EA3EB96F /* Pods_Heya.framework */; };
+		D8292401234F417800EFBDC9 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82923FF234F417800EFBDC9 /* PostCollectionViewCell.swift */; };
+		D8292402234F417800EFBDC9 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8292400234F417800EFBDC9 /* PostCollectionViewCell.xib */; };
+		D8292404234F45D300EFBDC9 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8292403234F45D300EFBDC9 /* UIViewExtension.swift */; };
+		D8292406234F462400EFBDC9 /* NumbersConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8292405234F462400EFBDC9 /* NumbersConst.swift */; };
 		D850BE28234B47A800DA944D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D850BE27234B47A800DA944D /* AppDelegate.swift */; };
 		D850BE2A234B47A800DA944D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D850BE29234B47A800DA944D /* SceneDelegate.swift */; };
 		D850BE31234B47A800DA944D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D850BE2F234B47A800DA944D /* Main.storyboard */; };
@@ -30,6 +37,24 @@
 		D855B5BF234C2D68005A56D4 /* StringsConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D855B5BE234C2D68005A56D4 /* StringsConst.swift */; };
 		D855B5C1234C2DAE005A56D4 /* VCNameConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D855B5C0234C2DAE005A56D4 /* VCNameConst.swift */; };
 		D855B5C8234C2F9B005A56D4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D855B5C7234C2F9B005A56D4 /* BaseViewController.swift */; };
+		D85A50C52350125200612268 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85A50C42350125200612268 /* Images.xcassets */; };
+		D85A50C72350127F00612268 /* PostBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A50C62350127F00612268 /* PostBO.swift */; };
+		D85A50CA23501DD600612268 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A50C823501DD600612268 /* UserCollectionViewCell.swift */; };
+		D85A50CB23501DD600612268 /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85A50C923501DD600612268 /* UserCollectionViewCell.xib */; };
+		D85A50CE235065AB00612268 /* LandMarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A50CC235065AB00612268 /* LandMarkTableViewCell.swift */; };
+		D85A50CF235065AB00612268 /* LandMarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85A50CD235065AB00612268 /* LandMarkTableViewCell.xib */; };
+		D85A50D32351B28500612268 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A50D12351B28500612268 /* LoginVC.swift */; };
+		D85A50D42351B28500612268 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85A50D22351B28500612268 /* LoginVC.xib */; };
+		D85A50D72351B5E700612268 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A50D52351B5E700612268 /* SignInVC.swift */; };
+		D85A50D82351B5E700612268 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85A50D62351B5E700612268 /* SignInVC.xib */; };
+		D85A50DB2351B60200612268 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A50D92351B60100612268 /* SignUpVC.swift */; };
+		D85A50DC2351B60200612268 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85A50DA2351B60200612268 /* SignUpVC.xib */; };
+		D85A50E22351CFA400612268 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A50E12351CFA400612268 /* LoadingView.swift */; };
+		D85A50E42351CFD100612268 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85A50E32351CFD100612268 /* LoadingView.xib */; };
+		D8D9866D2351E24E007EA59A /* 142-loading-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D9866C2351E24E007EA59A /* 142-loading-animation.json */; };
+		D8D9866F2351E75F007EA59A /* 1301-round-cap-material-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D9866E2351E75E007EA59A /* 1301-round-cap-material-loading.json */; };
+		D8D986712351E805007EA59A /* lf30_editor_p7nm7J.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D986702351E805007EA59A /* lf30_editor_p7nm7J.json */; };
+		D8D986732351E8E8007EA59A /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D986722351E8E8007EA59A /* AppUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +75,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0815433847FECBBABFE737FC /* Pods-HeyaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyaTests.release.xcconfig"; path = "Target Support Files/Pods-HeyaTests/Pods-HeyaTests.release.xcconfig"; sourceTree = "<group>"; };
+		0FF449EAAF92FFD914D15B8A /* Pods_HeyaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeyaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C9E0EDDB333DFCE181B26EE /* Pods-HeyaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyaTests.debug.xcconfig"; path = "Target Support Files/Pods-HeyaTests/Pods-HeyaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79DAD9F0AE6213AC0A6881CB /* Pods-Heya-HeyaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heya-HeyaUITests.release.xcconfig"; path = "Target Support Files/Pods-Heya-HeyaUITests/Pods-Heya-HeyaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8DC4671CAB4591BB1599F8B3 /* Pods-Heya-HeyaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heya-HeyaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Heya-HeyaUITests/Pods-Heya-HeyaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B267792E7A2D6C195F03D567 /* Pods-Heya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heya.debug.xcconfig"; path = "Target Support Files/Pods-Heya/Pods-Heya.debug.xcconfig"; sourceTree = "<group>"; };
+		B617A9C1FDAF42B2EA3EB96F /* Pods_Heya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E3F8A38C45A525820355A6 /* Pods-Heya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heya.release.xcconfig"; path = "Target Support Files/Pods-Heya/Pods-Heya.release.xcconfig"; sourceTree = "<group>"; };
+		D82923FF234F417800EFBDC9 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8292400234F417800EFBDC9 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
+		D8292403234F45D300EFBDC9 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		D8292405234F462400EFBDC9 /* NumbersConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersConst.swift; sourceTree = "<group>"; };
 		D850BE24234B47A800DA944D /* Heya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D850BE27234B47A800DA944D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D850BE29234B47A800DA944D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +116,25 @@
 		D855B5BE234C2D68005A56D4 /* StringsConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsConst.swift; sourceTree = "<group>"; };
 		D855B5C0234C2DAE005A56D4 /* VCNameConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCNameConst.swift; sourceTree = "<group>"; };
 		D855B5C7234C2F9B005A56D4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D85A50C42350125200612268 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D85A50C62350127F00612268 /* PostBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBO.swift; sourceTree = "<group>"; };
+		D85A50C823501DD600612268 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		D85A50C923501DD600612268 /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
+		D85A50CC235065AB00612268 /* LandMarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarkTableViewCell.swift; sourceTree = "<group>"; };
+		D85A50CD235065AB00612268 /* LandMarkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandMarkTableViewCell.xib; sourceTree = "<group>"; };
+		D85A50D12351B28500612268 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D85A50D22351B28500612268 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		D85A50D52351B5E700612268 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		D85A50D62351B5E700612268 /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		D85A50D92351B60100612268 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		D85A50DA2351B60200612268 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		D85A50E12351CFA400612268 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		D85A50E32351CFD100612268 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		D8D9866C2351E24E007EA59A /* 142-loading-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "142-loading-animation.json"; sourceTree = "<group>"; };
+		D8D9866E2351E75E007EA59A /* 1301-round-cap-material-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1301-round-cap-material-loading.json"; sourceTree = "<group>"; };
+		D8D986702351E805007EA59A /* lf30_editor_p7nm7J.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_p7nm7J.json; sourceTree = "<group>"; };
+		D8D986722351E8E8007EA59A /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		E73CC4E6B27306FC353AC30A /* Pods_Heya_HeyaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heya_HeyaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7B54D9F1DBDE81596D3BE7 /* Pods_Heya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0EEE4A2B615E2749C4D86CD /* Pods_HeyaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +158,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA8364247F20B18F0328EF2 /* Pods_Heya_HeyaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E9168534903CB4BECA895F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B267792E7A2D6C195F03D567 /* Pods-Heya.debug.xcconfig */,
+				D2E3F8A38C45A525820355A6 /* Pods-Heya.release.xcconfig */,
+				8DC4671CAB4591BB1599F8B3 /* Pods-Heya-HeyaUITests.debug.xcconfig */,
+				79DAD9F0AE6213AC0A6881CB /* Pods-Heya-HeyaUITests.release.xcconfig */,
+				6C9E0EDDB333DFCE181B26EE /* Pods-HeyaTests.debug.xcconfig */,
+				0815433847FECBBABFE737FC /* Pods-HeyaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		89CED8846C62B79E9603E587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B617A9C1FDAF42B2EA3EB96F /* Pods_Heya.framework */,
+				E73CC4E6B27306FC353AC30A /* Pods_Heya_HeyaUITests.framework */,
+				0FF449EAAF92FFD914D15B8A /* Pods_HeyaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D82923FE234F415100EFBDC9 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				D82923FF234F417800EFBDC9 /* PostCollectionViewCell.swift */,
+				D8292400234F417800EFBDC9 /* PostCollectionViewCell.xib */,
+				D85A50C823501DD600612268 /* UserCollectionViewCell.swift */,
+				D85A50C923501DD600612268 /* UserCollectionViewCell.xib */,
+				D85A50CC235065AB00612268 /* LandMarkTableViewCell.swift */,
+				D85A50CD235065AB00612268 /* LandMarkTableViewCell.xib */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
 		D850BE1B234B47A800DA944D = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +208,8 @@
 				D850BE42234B47A900DA944D /* HeyaTests */,
 				D850BE4D234B47A900DA944D /* HeyaUITests */,
 				D850BE25234B47A800DA944D /* Products */,
+				7E9168534903CB4BECA895F3 /* Pods */,
+				89CED8846C62B79E9603E587 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +259,7 @@
 		D850BE5E234B497700DA944D /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
+				D82923FE234F415100EFBDC9 /* Elements */,
 				D850BE60234B499500DA944D /* HomeVC.swift */,
 				D850BE61234B499500DA944D /* HomeVC.xib */,
 			);
@@ -189,8 +287,10 @@
 		D850BE69234B4A1900DA944D /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				D85A50E02351CF7B00612268 /* Views */,
 				D855B5C4234C2ED2005A56D4 /* ViewControllers */,
 				D855B5C2234C2EBA005A56D4 /* Constants */,
+				D8D986722351E8E8007EA59A /* AppUtils.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -209,7 +309,9 @@
 		D850BE6B234B4A4B00DA944D /* Assests */ = {
 			isa = PBXGroup;
 			children = (
+				D85A50DD2351CF5500612268 /* LottieAnimations */,
 				D850BE35234B47A900DA944D /* Assets.xcassets */,
+				D85A50C42350125200612268 /* Images.xcassets */,
 			);
 			path = Assests;
 			sourceTree = "<group>";
@@ -217,6 +319,7 @@
 		D850BE6C234B4A5C00DA944D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D85A50D02351B22E00612268 /* LoginVC */,
 				D850BE68234B49EF00DA944D /* MainTabbar */,
 				D850BE5E234B497700DA944D /* HomeVC */,
 				D850BE5F234B497C00DA944D /* HistoryVC */,
@@ -230,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				D855B5B0234C2923005A56D4 /* TabbarViewcontrollerExtension.swift */,
+				D8292403234F45D300EFBDC9 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -258,6 +362,7 @@
 				D855B5BC234C2D54005A56D4 /* ColorsConst.swift */,
 				D855B5BE234C2D68005A56D4 /* StringsConst.swift */,
 				D855B5C0234C2DAE005A56D4 /* VCNameConst.swift */,
+				D8292405234F462400EFBDC9 /* NumbersConst.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -274,6 +379,7 @@
 		D855B5C5234C2F19005A56D4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D85A50C62350127F00612268 /* PostBO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,6 +391,38 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		D85A50D02351B22E00612268 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				D85A50D12351B28500612268 /* LoginVC.swift */,
+				D85A50D22351B28500612268 /* LoginVC.xib */,
+				D85A50D52351B5E700612268 /* SignInVC.swift */,
+				D85A50D62351B5E700612268 /* SignInVC.xib */,
+				D85A50D92351B60100612268 /* SignUpVC.swift */,
+				D85A50DA2351B60200612268 /* SignUpVC.xib */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		D85A50DD2351CF5500612268 /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				D8D986702351E805007EA59A /* lf30_editor_p7nm7J.json */,
+				D8D9866E2351E75E007EA59A /* 1301-round-cap-material-loading.json */,
+				D8D9866C2351E24E007EA59A /* 142-loading-animation.json */,
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		D85A50E02351CF7B00612268 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D85A50E12351CFA400612268 /* LoadingView.swift */,
+				D85A50E32351CFD100612268 /* LoadingView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -292,9 +430,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D850BE53234B47A900DA944D /* Build configuration list for PBXNativeTarget "Heya" */;
 			buildPhases = (
+				28F86231D34D1C047D1094FA /* [CP] Check Pods Manifest.lock */,
 				D850BE20234B47A800DA944D /* Sources */,
 				D850BE21234B47A800DA944D /* Frameworks */,
 				D850BE22234B47A800DA944D /* Resources */,
+				BB63C2C3A160FA1317B2B985 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,6 +449,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D850BE56234B47A900DA944D /* Build configuration list for PBXNativeTarget "HeyaTests" */;
 			buildPhases = (
+				959FA94E26331A7C41D8590A /* [CP] Check Pods Manifest.lock */,
 				D850BE3B234B47A900DA944D /* Sources */,
 				D850BE3C234B47A900DA944D /* Frameworks */,
 				D850BE3D234B47A900DA944D /* Resources */,
@@ -327,9 +468,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D850BE59234B47A900DA944D /* Build configuration list for PBXNativeTarget "HeyaUITests" */;
 			buildPhases = (
+				C237E40BC97F7E532F6BE11F /* [CP] Check Pods Manifest.lock */,
 				D850BE46234B47A900DA944D /* Sources */,
 				D850BE47234B47A900DA944D /* Frameworks */,
 				D850BE48234B47A900DA944D /* Resources */,
+				61FCFDCE8A8E23FE2F3B9084 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -389,13 +532,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85A50D82351B5E700612268 /* SignInVC.xib in Resources */,
+				D8D9866D2351E24E007EA59A /* 142-loading-animation.json in Resources */,
+				D85A50C52350125200612268 /* Images.xcassets in Resources */,
+				D85A50DC2351B60200612268 /* SignUpVC.xib in Resources */,
+				D85A50CB23501DD600612268 /* UserCollectionViewCell.xib in Resources */,
+				D8292402234F417800EFBDC9 /* PostCollectionViewCell.xib in Resources */,
 				D855B5B6234C2A7F005A56D4 /* MessageVC.xib in Resources */,
 				D850BE39234B47A900DA944D /* LaunchScreen.storyboard in Resources */,
+				D85A50CF235065AB00612268 /* LandMarkTableViewCell.xib in Resources */,
+				D85A50E42351CFD100612268 /* LoadingView.xib in Resources */,
+				D85A50D42351B28500612268 /* LoginVC.xib in Resources */,
 				D850BE63234B499500DA944D /* HomeVC.xib in Resources */,
 				D850BE67234B49A200DA944D /* HistoryVC.xib in Resources */,
 				D850BE36234B47A900DA944D /* Assets.xcassets in Resources */,
 				D855B5BB234C2A9C005A56D4 /* SettingVC.xib in Resources */,
 				D850BE31234B47A800DA944D /* Main.storyboard in Resources */,
+				D8D986712351E805007EA59A /* lf30_editor_p7nm7J.json in Resources */,
+				D8D9866F2351E75F007EA59A /* 1301-round-cap-material-loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,22 +569,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28F86231D34D1C047D1094FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Heya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61FCFDCE8A8E23FE2F3B9084 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Heya-HeyaUITests/Pods-Heya-HeyaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Heya-HeyaUITests/Pods-Heya-HeyaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Heya-HeyaUITests/Pods-Heya-HeyaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959FA94E26331A7C41D8590A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeyaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB63C2C3A160FA1317B2B985 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Heya/Pods-Heya-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Heya/Pods-Heya-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Heya/Pods-Heya-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C237E40BC97F7E532F6BE11F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Heya-HeyaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D850BE20234B47A800DA944D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8292406234F462400EFBDC9 /* NumbersConst.swift in Sources */,
 				D850BE62234B499500DA944D /* HomeVC.swift in Sources */,
+				D85A50D32351B28500612268 /* LoginVC.swift in Sources */,
 				D855B5BD234C2D54005A56D4 /* ColorsConst.swift in Sources */,
+				D85A50D72351B5E700612268 /* SignInVC.swift in Sources */,
+				D85A50E22351CFA400612268 /* LoadingView.swift in Sources */,
 				D855B5B5234C2A7F005A56D4 /* MessageVC.swift in Sources */,
 				D850BE34234B47A800DA944D /* Heya.xcdatamodeld in Sources */,
 				D850BE5D234B48C400DA944D /* MainTabbarVC.swift in Sources */,
+				D8292401234F417800EFBDC9 /* PostCollectionViewCell.swift in Sources */,
+				D8292404234F45D300EFBDC9 /* UIViewExtension.swift in Sources */,
 				D855B5C8234C2F9B005A56D4 /* BaseViewController.swift in Sources */,
 				D850BE66234B49A200DA944D /* HistoryVC.swift in Sources */,
 				D850BE28234B47A800DA944D /* AppDelegate.swift in Sources */,
+				D85A50DB2351B60200612268 /* SignUpVC.swift in Sources */,
+				D8D986732351E8E8007EA59A /* AppUtils.swift in Sources */,
 				D850BE6E234B4B7800DA944D /* BaseTabViewController.swift in Sources */,
 				D855B5BA234C2A9C005A56D4 /* SettingVC.swift in Sources */,
+				D85A50CA23501DD600612268 /* UserCollectionViewCell.swift in Sources */,
 				D855B5B1234C2923005A56D4 /* TabbarViewcontrollerExtension.swift in Sources */,
+				D85A50CE235065AB00612268 /* LandMarkTableViewCell.swift in Sources */,
+				D85A50C72350127F00612268 /* PostBO.swift in Sources */,
 				D855B5BF234C2D68005A56D4 /* StringsConst.swift in Sources */,
 				D850BE2A234B47A800DA944D /* SceneDelegate.swift in Sources */,
 				D855B5C1234C2DAE005A56D4 /* VCNameConst.swift in Sources */,
@@ -604,6 +872,7 @@
 		};
 		D850BE54234B47A900DA944D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B267792E7A2D6C195F03D567 /* Pods-Heya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -615,13 +884,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ttc-solutions.trungnv.Heya";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		D850BE55234B47A900DA944D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2E3F8A38C45A525820355A6 /* Pods-Heya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -633,13 +903,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ttc-solutions.trungnv.Heya";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		D850BE57234B47A900DA944D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C9E0EDDB333DFCE181B26EE /* Pods-HeyaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -662,6 +933,7 @@
 		};
 		D850BE58234B47A900DA944D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0815433847FECBBABFE737FC /* Pods-HeyaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -684,6 +956,7 @@
 		};
 		D850BE5A234B47A900DA944D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC4671CAB4591BB1599F8B3 /* Pods-Heya-HeyaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -704,6 +977,7 @@
 		};
 		D850BE5B234B47A900DA944D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79DAD9F0AE6213AC0A6881CB /* Pods-Heya-HeyaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

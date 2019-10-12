@@ -1,0 +1,6 @@
+framework module Pods_Heya {
+  umbrella header "Pods-Heya-umbrella.h"
+
+  export *
+  module * { export * }
+}

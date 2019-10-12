@@ -1,0 +1,6 @@
+framework module Pods_Heya_HeyaUITests {
+  umbrella header "Pods-Heya-HeyaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UserCollectionViewCell" customModule="Heya" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="166" height="201"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLC-uX-seN">
+                        <rect key="frame" x="0.0" y="0.0" width="166" height="201"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="nFA-I1-OeJ">
+                                <rect key="frame" x="0.0" y="0.0" width="166" height="201"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_avatar_2" translatesAutoresizingMaskIntoConstraints="NO" id="Ynu-Qg-dET">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="116"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8b-oY-7ak">
+                                        <rect key="frame" x="0.0" y="117" width="166" height="84"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="431-jc-QcO">
+                                                <rect key="frame" x="10" y="5" width="146" height="31.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Hoài Thương" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOR-0K-9SM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="146" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đại học báo chí và tuyên truyền" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1a-yP-cSI">
+                                                        <rect key="frame" x="0.0" y="17" width="146" height="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="9xR-Gi-bGj">
+                                                <rect key="frame" x="12" y="50" width="142" height="26"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3j-oP-fro">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68" height="26"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                                        <state key="normal" title="Add Friend">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hk-XO-qR6">
+                                                        <rect key="frame" x="74" y="0.0" width="68" height="26"/>
+                                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                                        <state key="normal" title="Follow">
+                                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="AMk-xf-Hpz"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="9xR-Gi-bGj" secondAttribute="trailing" constant="12" id="9s2-4T-9dY"/>
+                                            <constraint firstAttribute="height" constant="84" id="E9C-7Q-IQm"/>
+                                            <constraint firstItem="431-jc-QcO" firstAttribute="leading" secondItem="y8b-oY-7ak" secondAttribute="leading" constant="10" id="OXP-mz-mGh"/>
+                                            <constraint firstItem="431-jc-QcO" firstAttribute="top" secondItem="y8b-oY-7ak" secondAttribute="top" constant="5" id="bvK-1R-DBu"/>
+                                            <constraint firstItem="9xR-Gi-bGj" firstAttribute="leading" secondItem="y8b-oY-7ak" secondAttribute="leading" constant="12" id="h4Y-ll-5ui"/>
+                                            <constraint firstAttribute="bottom" secondItem="9xR-Gi-bGj" secondAttribute="bottom" constant="8" id="hb3-J9-cbr"/>
+                                            <constraint firstAttribute="trailing" secondItem="431-jc-QcO" secondAttribute="trailing" constant="10" id="qHO-03-Kcm"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nFA-I1-OeJ" secondAttribute="trailing" id="CuW-h3-QAb"/>
+                            <constraint firstItem="nFA-I1-OeJ" firstAttribute="top" secondItem="LLC-uX-seN" secondAttribute="top" id="NKh-0Z-eP7"/>
+                            <constraint firstItem="nFA-I1-OeJ" firstAttribute="leading" secondItem="LLC-uX-seN" secondAttribute="leading" id="ed7-YG-sE2"/>
+                            <constraint firstAttribute="bottom" secondItem="nFA-I1-OeJ" secondAttribute="bottom" id="ovE-1Q-43O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="LLC-uX-seN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LCI-nY-3gO"/>
+                <constraint firstItem="LLC-uX-seN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RD4-Q6-lmj"/>
+                <constraint firstAttribute="bottom" secondItem="LLC-uX-seN" secondAttribute="bottom" id="UVp-Fe-Sq3"/>
+                <constraint firstAttribute="trailing" secondItem="LLC-uX-seN" secondAttribute="trailing" id="nMh-sD-xiQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="166" height="201"/>
+            <connections>
+                <outlet property="btnAddFriend" destination="X3j-oP-fro" id="GcG-xf-JJR"/>
+                <outlet property="btnFollow" destination="6hk-XO-qR6" id="9D6-df-p1y"/>
+                <outlet property="containerView" destination="LLC-uX-seN" id="rUY-Zl-vXh"/>
+                <outlet property="imgUser" destination="Ynu-Qg-dET" id="vWL-SV-N02"/>
+                <outlet property="lblInfo" destination="S1a-yP-cSI" id="U16-Fd-vKE"/>
+                <outlet property="lblName" destination="GOR-0K-9SM" id="0pA-h1-BYf"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="155.02232142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_avatar_2" width="317" height="310"/>
+    </resources>
+</document>
