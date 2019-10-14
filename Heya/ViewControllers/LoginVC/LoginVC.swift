@@ -35,10 +35,14 @@ class LoginVC: BaseViewController {
         pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         pageViewController.delegate = self
         
-        viewControllers = [
-            SignInVC(nibName: "SignInVC", bundle: nil),
-            SignUpVC(nibName: "SignUpVC", bundle: nil),
-        ]
+        let signInVC = SignInVC(nibName: "SignInVC", bundle: nil)
+        signInVC.didLoginSuccess = {
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        let signUpVC = SignUpVC(nibName: "SignUpVC", bundle: nil)
+        
+        viewControllers = [signInVC, signUpVC]
         
         pageViewController.setViewControllers([viewControllerAtIndex(0)!], direction: .forward, animated: true, completion: nil)
         pageViewController.dataSource = self
@@ -80,6 +84,11 @@ class LoginVC: BaseViewController {
             self.changeTabColor(isLogin: false)
             self.subLineView.transform = CGAffineTransform(translationX: self.subLineView.frame.width + 5.0, y: 0)
         }
+    }
+    
+    
+    @IBAction func closeAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

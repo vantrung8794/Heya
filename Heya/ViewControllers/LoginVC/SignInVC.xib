@@ -12,6 +12,8 @@
                 <outlet property="btnForgotPass" destination="8mN-wl-ldI" id="ICx-Ie-G9C"/>
                 <outlet property="btnLogin" destination="5Fu-kh-xLQ" id="IYs-ZU-gkv"/>
                 <outlet property="btnLoginWithGoogle" destination="gfs-Ts-yVd" id="yOr-Gk-rnp"/>
+                <outlet property="tfPassword" destination="pDa-2W-t87" id="vhP-Yn-rKt"/>
+                <outlet property="tfUserName" destination="5Mh-9t-I9d" id="l65-aT-MIl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewPassWord" destination="PZ6-Hq-69o" id="JPF-uB-mst"/>
                 <outlet property="viewUserName" destination="BGX-lA-7yN" id="WWE-Wv-0Pb"/>
@@ -31,7 +33,7 @@
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UserName" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5Mh-9t-I9d">
                                     <rect key="frame" x="10" y="2" width="354" height="31"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <textInputTraits key="textInputTraits" textContentType="username"/>
+                                    <textInputTraits key="textInputTraits"/>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,7 +51,7 @@
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PassWord" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pDa-2W-t87">
                                     <rect key="frame" x="10" y="2" width="354" height="31"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,6 +76,9 @@
                     <state key="normal" title="Đăng nhập">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="signInAction:" destination="-1" eventType="touchUpInside" id="UlO-UD-VeP"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mN-wl-ldI">
                     <rect key="frame" x="157.5" y="189" width="99" height="28"/>
@@ -82,7 +87,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfs-Ts-yVd">
                     <rect key="frame" x="82" y="252" width="250" height="35"/>
-                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="250" id="Um3-tw-kbM"/>
                         <constraint firstAttribute="height" constant="35" id="iaf-01-96N"/>

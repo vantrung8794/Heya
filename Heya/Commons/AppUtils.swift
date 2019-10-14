@@ -10,6 +10,25 @@ import Foundation
 import UIKit
 
 class AppUtils {
+    static var loadingView: LoadingView?
+    
+    static func showLoading(){
+        if loadingView != nil{
+            return
+        }
+        
+        loadingView = LoadingView()
+        loadingView?.show()
+    }
+    static func hideLoading(){
+        if let view = loadingView{
+            loadingView = nil
+            view.removeFromSuperview()
+        }else{
+            return
+        }
+    }
+    
     static func showLoadingInViewController(viewController: BaseViewController){
         if viewController.loadingView != nil{
             return

@@ -34,10 +34,10 @@ class UserBO: NSObject{
     }
 }
 
-enum TypeLandMark{
-    case A
-    case B
-    case C
+enum TypeLandMark: Int{
+    case A = 0
+    case B = 1
+    case C = 2
 }
 
 class LandMarkBO: NSObject {

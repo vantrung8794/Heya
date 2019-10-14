@@ -15,6 +15,14 @@ class SignInVC: UIViewController {
     @IBOutlet weak var btnForgotPass: UIButton!
     @IBOutlet weak var btnLoginWithGoogle: UIButton!
     
+    @IBOutlet weak var tfUserName: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
+    
+    var didLoginSuccess: (() -> Void)?
+    
+    let userName = "ttc"
+    let pass = "123"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
@@ -28,5 +36,21 @@ class SignInVC: UIViewController {
         btnForgotPass.setRadius()
         btnLoginWithGoogle.setRadius()
     }
-
+    
+    @IBAction func signInAction(_ sender: Any) {
+        AppUtils.showLoading()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            AppUtils.hideLoading()
+            if self.tfUserName.text == self.userName && self.tfPassword.text == self.pass{
+                if let didSuccess = self.didLoginSuccess{
+                    didSuccess()
+                }
+            }else{
+                TAlertView(alertTitle: "Thất bại", sub: nil, alertMainText: "Sai tên tài khoản hoặc mật khẩu.", haveCancel: false, didAccept: nil, didCancel: nil).show()
+            }
+            
+        }
+        
+    }
+    
 }

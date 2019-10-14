@@ -19,8 +19,8 @@ class HomeVC: BaseTabViewController {
     @IBOutlet weak var userCollectionContainer: UIView!
     @IBOutlet weak var heightOfLandMarkTable: NSLayoutConstraint!
     
-    let cellPercentWidth: CGFloat = 0.9
     let HEIGHT_CELL_LANDMARK: CGFloat = 320
+    let HEIGHT_HEADER_TABLE: CGFloat = 60
     var centeredCollectionViewFlowLayout: CenteredCollectionViewFlowLayout!
     
     // MARK: - Vars
@@ -45,10 +45,12 @@ class HomeVC: BaseTabViewController {
     }
     
     func initTableView(){
+        landMarksTableView.register(UINib(nibName: "HeaderViewForLandMark", bundle: nil), forHeaderFooterViewReuseIdentifier: "HeaderViewForLandMark")
+        
         landMarksTableView.register(UINib(nibName: "LandMarkTableViewCell", bundle: nil), forCellReuseIdentifier: "LandMarkTableViewCell")
         landMarksTableView.delegate = self
         landMarksTableView.dataSource = self
-        heightOfLandMarkTable.constant = CGFloat(lstLandMark.count) * HEIGHT_CELL_LANDMARK
+        heightOfLandMarkTable.constant = CGFloat(lstLandMark.count) * HEIGHT_CELL_LANDMARK + HEIGHT_HEADER_TABLE * 3.0
     }
     
     func initCollectionView(){
@@ -57,7 +59,7 @@ class HomeVC: BaseTabViewController {
         centeredCollectionViewFlowLayout = postCollectionView.collectionViewLayout as? CenteredCollectionViewFlowLayout
         centeredCollectionViewFlowLayout.minimumLineSpacing = 10
         centeredCollectionViewFlowLayout.itemSize = CGSize(
-            width: postCollectionView.frame.width * cellPercentWidth,
+            width: postCollectionView.frame.width  - 40,
             height: postCollectionView.frame.height - 2.0
         )
         initLayoutForCollectionView(postCollectionView)
@@ -81,6 +83,12 @@ class HomeVC: BaseTabViewController {
     // MARK: - Actions
     
     @IBAction func findAction(_ sender: Any) {
+        TAlertView(alertTitle: nil, sub: nil, alertMainText: "Hahaha", haveCancel: false, didAccept: {
+            print("accept")
+        }) {
+            print("cancel")
+        }.show()
+        
     }
     
     @IBAction func postAction(_ sender: Any) {
@@ -125,20 +133,50 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
 // MARK: - UITableview delegates, datasources
 extension HomeVC: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return lstLandMark.count
+        return lstLandMark.filter{$0.type.rawValue == section}.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LandMarkTableViewCell", for: indexPath) as? LandMarkTableViewCell
-        cell?.configCell(lstLandMark[indexPath.row])
+        cell?.configCell( lstLandMark.filter{$0.type.rawValue == indexPath.section}[indexPath.row])
         return cell!
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return HEIGHT_CELL_LANDMARK
+    }
+    
+    //Header view
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = .clear
+        let subView = LandMarkHeader(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: HEIGHT_HEADER_TABLE))
+        
+        var nameType = ""
+        switch section {
+        case TypeLandMark.A.rawValue:
+            nameType = "Danh lam thắng cảnh".uppercased()
+        case TypeLandMark.B.rawValue:
+            nameType = "Di tích lịch sử".uppercased()
+        case TypeLandMark.C.rawValue:
+            nameType = "Địa điểm ăn uống".uppercased()
+        default:
+            nameType = ""
+        }
+        
+        subView.lblHeader.text = nameType
+        
+        view.addSubview(subView)
+//        headerView?.lblheader.text = "Section \(section)"
+       
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return HEIGHT_HEADER_TABLE
     }
 }
 
@@ -157,7 +195,9 @@ extension HomeVC{
                 LandMarkBO(name: "Động Phong Nha", location: "Quảng Bình, Việt Nam", image: "img_dong_phong_nha", hastag: "dongphongnha", typeLand: .A),
                 LandMarkBO(name: "Hồ Gươm", location: "Hà Nội, Việt Nam", image: "img_ho_guom", hastag: "hoguom", typeLand: .C),
                 LandMarkBO(name: "Lăng Bác Hồ", location: "Hà Nội, Việt Nam", image: "img_lang_bac", hastag: "langbac", typeLand: .B),
-                LandMarkBO(name: "Vịnh Hạ Long", location: "Quảng Ninh, Việt Nam", image: "img_vinh_ha_long", hastag: "vinhhalong", typeLand: .A)]
+                LandMarkBO(name: "Vịnh Hạ Long", location: "Quảng Ninh, Việt Nam", image: "img_vinh_ha_long", hastag: "vinhhalong", typeLand: .A),
+        LandMarkBO(name: "Vịnh Hạ Long", location: "Quảng Ninh, Việt Nam", image: "img_vinh_ha_long", hastag: "vinhhalong", typeLand: .C),
+        LandMarkBO(name: "Vịnh Hạ Long", location: "Quảng Ninh, Việt Nam", image: "img_vinh_ha_long", hastag: "vinhhalong", typeLand: .B)]
     }
     
     static func initPosts() -> [PostBO]{

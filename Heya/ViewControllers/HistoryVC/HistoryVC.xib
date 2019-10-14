@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryVC" customModule="Heya" customModuleProvider="target">
             <connections>
+                <outlet property="historyTableView" destination="3ao-oV-DDL" id="DOx-jQ-qcn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,20 +18,28 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="History VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOd-bH-eCC">
-                    <rect key="frame" x="137" y="339" width="94" height="24"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVF-Ed-lBI">
+                    <rect key="frame" x="30" y="54" width="79" height="27.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3ao-oV-DDL">
+                    <rect key="frame" x="0.0" y="85.5" width="414" height="781.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="KOd-bH-eCC" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="X4l-mG-Ycc"/>
-                <constraint firstItem="KOd-bH-eCC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="n5a-0N-N5H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3ao-oV-DDL" secondAttribute="trailing" id="Ei3-J3-apI"/>
+                <constraint firstItem="iVF-Ed-lBI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Hvr-6c-phP"/>
+                <constraint firstItem="iVF-Ed-lBI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="P7t-af-9Qk"/>
+                <constraint firstItem="3ao-oV-DDL" firstAttribute="top" secondItem="iVF-Ed-lBI" secondAttribute="bottom" constant="4" id="oCL-fb-CC8"/>
+                <constraint firstItem="3ao-oV-DDL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pls-vM-bCV"/>
+                <constraint firstItem="3ao-oV-DDL" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="trg-Kh-Nal"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="129"/>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
         </view>
     </objects>
 </document>
