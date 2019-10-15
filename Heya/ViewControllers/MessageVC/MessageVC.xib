@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageVC" customModule="Heya" customModuleProvider="target">
             <connections>
+                <outlet property="containerView" destination="VaA-o7-EhY" id="sjt-8b-XR3"/>
+                <outlet property="mainSegment" destination="fPf-me-SNg" id="szA-iw-x8M"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,20 +19,42 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCi-QO-cLT">
-                    <rect key="frame" x="151.5" y="441" width="111" height="24"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npq-xs-z0i">
+                    <rect key="frame" x="30" y="54" width="354" height="27.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fPf-me-SNg">
+                    <rect key="frame" x="134.5" y="86.5" width="145" height="32"/>
+                    <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="0.63514019691780821" colorSpace="custom" customColorSpace="sRGB"/>
+                    <segments>
+                        <segment title="Tin nhắn"/>
+                        <segment title="Bạn bè"/>
+                    </segments>
+                    <connections>
+                        <action selector="changeSegmentValue:" destination="-1" eventType="valueChanged" id="Gye-WG-Clb"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VaA-o7-EhY">
+                    <rect key="frame" x="0.0" y="122.5" width="414" height="739.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="vCi-QO-cLT" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="46D-9U-zNO"/>
-                <constraint firstItem="vCi-QO-cLT" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="wuy-8z-N52"/>
+                <constraint firstItem="npq-xs-z0i" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="11x-ML-vK4"/>
+                <constraint firstItem="VaA-o7-EhY" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="5DC-Jy-Bjk"/>
+                <constraint firstItem="VaA-o7-EhY" firstAttribute="top" secondItem="fPf-me-SNg" secondAttribute="bottom" constant="5" id="TjK-Ez-wWC"/>
+                <constraint firstItem="VaA-o7-EhY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Uy3-R2-AFd"/>
+                <constraint firstItem="npq-xs-z0i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Zf2-Aq-uwZ"/>
+                <constraint firstItem="fPf-me-SNg" firstAttribute="top" secondItem="npq-xs-z0i" secondAttribute="bottom" constant="5" id="Zm6-g2-bZA"/>
+                <constraint firstItem="fPf-me-SNg" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="d3q-DI-TsF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="npq-xs-z0i" secondAttribute="trailing" constant="30" id="jVu-2S-rv3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VaA-o7-EhY" secondAttribute="trailing" id="kIf-PT-IDX"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="129"/>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
         </view>
     </objects>
 </document>

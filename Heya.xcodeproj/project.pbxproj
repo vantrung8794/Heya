@@ -10,6 +10,11 @@
 		4DA8364247F20B18F0328EF2 /* Pods_Heya_HeyaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73CC4E6B27306FC353AC30A /* Pods_Heya_HeyaUITests.framework */; };
 		A0EEE4A2B615E2749C4D86CD /* Pods_HeyaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF449EAAF92FFD914D15B8A /* Pods_HeyaTests.framework */; };
 		CA7B54D9F1DBDE81596D3BE7 /* Pods_Heya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B617A9C1FDAF42B2EA3EB96F /* Pods_Heya.framework */; };
+		D815EC7723555E3100407968 /* HistoryBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D815EC7623555E3100407968 /* HistoryBO.swift */; };
+		D815EC7A23556FC900407968 /* MessageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D815EC7823556FC900407968 /* MessageTabView.swift */; };
+		D815EC7B23556FC900407968 /* MessageTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D815EC7923556FC900407968 /* MessageTabView.xib */; };
+		D815EC7F2355700900407968 /* AllFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D815EC7D2355700900407968 /* AllFriendsVC.swift */; };
+		D815EC802355700900407968 /* AllFriendsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D815EC7E2355700900407968 /* AllFriendsVC.xib */; };
 		D8286606235224FF00CBBB85 /* TAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8286605235224FF00CBBB85 /* TAlertView.xib */; };
 		D8292401234F417800EFBDC9 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82923FF234F417800EFBDC9 /* PostCollectionViewCell.swift */; };
 		D8292402234F417800EFBDC9 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8292400234F417800EFBDC9 /* PostCollectionViewCell.xib */; };
@@ -90,6 +95,11 @@
 		B267792E7A2D6C195F03D567 /* Pods-Heya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heya.debug.xcconfig"; path = "Target Support Files/Pods-Heya/Pods-Heya.debug.xcconfig"; sourceTree = "<group>"; };
 		B617A9C1FDAF42B2EA3EB96F /* Pods_Heya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E3F8A38C45A525820355A6 /* Pods-Heya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heya.release.xcconfig"; path = "Target Support Files/Pods-Heya/Pods-Heya.release.xcconfig"; sourceTree = "<group>"; };
+		D815EC7623555E3100407968 /* HistoryBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryBO.swift; sourceTree = "<group>"; };
+		D815EC7823556FC900407968 /* MessageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTabView.swift; sourceTree = "<group>"; };
+		D815EC7923556FC900407968 /* MessageTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTabView.xib; sourceTree = "<group>"; };
+		D815EC7D2355700900407968 /* AllFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFriendsVC.swift; sourceTree = "<group>"; };
+		D815EC7E2355700900407968 /* AllFriendsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllFriendsVC.xib; sourceTree = "<group>"; };
 		D8286605235224FF00CBBB85 /* TAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAlertView.xib; sourceTree = "<group>"; };
 		D82923FF234F417800EFBDC9 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		D8292400234F417800EFBDC9 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -361,6 +371,10 @@
 			children = (
 				D855B5B3234C2A7E005A56D4 /* MessageVC.swift */,
 				D855B5B4234C2A7E005A56D4 /* MessageVC.xib */,
+				D815EC7823556FC900407968 /* MessageTabView.swift */,
+				D815EC7923556FC900407968 /* MessageTabView.xib */,
+				D815EC7D2355700900407968 /* AllFriendsVC.swift */,
+				D815EC7E2355700900407968 /* AllFriendsVC.xib */,
 			);
 			path = MessageVC;
 			sourceTree = "<group>";
@@ -398,6 +412,7 @@
 			isa = PBXGroup;
 			children = (
 				D85A50C62350127F00612268 /* PostBO.swift */,
+				D815EC7623555E3100407968 /* HistoryBO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -570,6 +585,7 @@
 				D8EB84ED23545C7E00332169 /* LandMarkHeader.xib in Resources */,
 				D855B5B6234C2A7F005A56D4 /* MessageVC.xib in Resources */,
 				D850BE39234B47A900DA944D /* LaunchScreen.storyboard in Resources */,
+				D815EC802355700900407968 /* AllFriendsVC.xib in Resources */,
 				D85A50CF235065AB00612268 /* LandMarkTableViewCell.xib in Resources */,
 				D85A50E42351CFD100612268 /* LoadingView.xib in Resources */,
 				D8286606235224FF00CBBB85 /* TAlertView.xib in Resources */,
@@ -579,6 +595,7 @@
 				D850BE36234B47A900DA944D /* Assets.xcassets in Resources */,
 				D855B5BB234C2A9C005A56D4 /* SettingVC.xib in Resources */,
 				D850BE31234B47A800DA944D /* Main.storyboard in Resources */,
+				D815EC7B23556FC900407968 /* MessageTabView.xib in Resources */,
 				D8D986712351E805007EA59A /* lf30_editor_p7nm7J.json in Resources */,
 				D8EB84F4235485A400332169 /* HistoryTableViewCell.xib in Resources */,
 				D8D9866F2351E75F007EA59A /* 1301-round-cap-material-loading.json in Resources */,
@@ -716,8 +733,10 @@
 				D85A50D72351B5E700612268 /* SignInVC.swift in Sources */,
 				D85A50E22351CFA400612268 /* LoadingView.swift in Sources */,
 				D855B5B5234C2A7F005A56D4 /* MessageVC.swift in Sources */,
+				D815EC7A23556FC900407968 /* MessageTabView.swift in Sources */,
 				D8EB84F3235485A400332169 /* HistoryTableViewCell.swift in Sources */,
 				D850BE34234B47A800DA944D /* Heya.xcdatamodeld in Sources */,
+				D815EC7F2355700900407968 /* AllFriendsVC.swift in Sources */,
 				D850BE5D234B48C400DA944D /* MainTabbarVC.swift in Sources */,
 				D8292401234F417800EFBDC9 /* PostCollectionViewCell.swift in Sources */,
 				D8EB84EF2354629E00332169 /* TAlertView.swift in Sources */,
@@ -730,6 +749,7 @@
 				D8D986732351E8E8007EA59A /* AppUtils.swift in Sources */,
 				D850BE6E234B4B7800DA944D /* BaseTabViewController.swift in Sources */,
 				D855B5BA234C2A9C005A56D4 /* SettingVC.swift in Sources */,
+				D815EC7723555E3100407968 /* HistoryBO.swift in Sources */,
 				D85A50CA23501DD600612268 /* UserCollectionViewCell.swift in Sources */,
 				D855B5B1234C2923005A56D4 /* TabbarViewcontrollerExtension.swift in Sources */,
 				D85A50CE235065AB00612268 /* LandMarkTableViewCell.swift in Sources */,
