@@ -8,8 +8,11 @@
 
 import UIKit
 
+protocol LoginVCDelegate {
+    func didLoginSuccess(loginVC: LoginVC, userName: String, pass passWord: String)
+}
+
 class LoginVC: BaseViewController {
-    
     var viewControllers: [UIViewController]!
     var pageViewController: UIPageViewController!
     @IBOutlet weak var loginContainerView: UIView!
@@ -18,6 +21,7 @@ class LoginVC: BaseViewController {
     @IBOutlet weak var btnSignInTab: UIButton!
     @IBOutlet weak var btnSignUpTab: UIButton!
     
+    var delegate: LoginVCDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +40,12 @@ class LoginVC: BaseViewController {
         pageViewController.delegate = self
         
         let signInVC = SignInVC(nibName: "SignInVC", bundle: nil)
-        signInVC.didLoginSuccess = {
-            self.dismiss(animated: true, completion: nil)
+        signInVC.didLoginSuccess = { userName, pass in
+            self.dismiss(animated: true){
+                if let mDelegate = self.delegate{
+                    mDelegate.didLoginSuccess(loginVC: self, userName: userName ?? "", pass: pass ?? "")
+                }
+            }
         }
         
         let signUpVC = SignUpVC(nibName: "SignUpVC", bundle: nil)

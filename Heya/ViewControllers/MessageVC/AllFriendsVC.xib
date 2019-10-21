@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllFriendsVC" customModule="Heya" customModuleProvider="target">
             <connections>
+                <outlet property="friendsTableView" destination="qh5-4d-AHj" id="j8N-gV-53K"/>
+                <outlet property="tfSearch" destination="iE0-QH-Uep" id="zt0-uJ-yd0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,20 +19,32 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qum-XV-HJf">
-                    <rect key="frame" x="181.5" y="442.5" width="51" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qh5-4d-AHj">
+                    <rect key="frame" x="0.0" y="82" width="414" height="780"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iE0-QH-Uep">
+                    <rect key="frame" x="20" y="46" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="95j-7x-MbM"/>
+                    </connections>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Qum-XV-HJf" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="fFM-aZ-8Q6"/>
-                <constraint firstItem="Qum-XV-HJf" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fP7-bx-2MK"/>
+                <constraint firstItem="qh5-4d-AHj" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="5Ki-cG-hZm"/>
+                <constraint firstItem="iE0-QH-Uep" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9Yy-ma-D80"/>
+                <constraint firstItem="iE0-QH-Uep" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="2" id="9hH-o9-M1d"/>
+                <constraint firstItem="qh5-4d-AHj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AB8-pG-yL3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iE0-QH-Uep" secondAttribute="trailing" constant="20" id="DxP-15-bZ3"/>
+                <constraint firstItem="qh5-4d-AHj" firstAttribute="top" secondItem="iE0-QH-Uep" secondAttribute="bottom" constant="2" id="N0n-PM-8lU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qh5-4d-AHj" secondAttribute="trailing" id="mkQ-zC-RAF"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="94" y="133"/>
+            <point key="canvasLocation" x="92.753623188405811" y="132.58928571428572"/>
         </view>
     </objects>
 </document>

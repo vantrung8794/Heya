@@ -59,7 +59,7 @@ class HomeVC: BaseTabViewController {
         centeredCollectionViewFlowLayout = postCollectionView.collectionViewLayout as? CenteredCollectionViewFlowLayout
         centeredCollectionViewFlowLayout.minimumLineSpacing = 10
         centeredCollectionViewFlowLayout.itemSize = CGSize(
-            width: postCollectionView.frame.width  - 40,
+            width: postCollectionView.frame.width  - 80,
             height: postCollectionView.frame.height - 2.0
         )
         initLayoutForCollectionView(postCollectionView)
@@ -94,9 +94,16 @@ class HomeVC: BaseTabViewController {
     @IBAction func postAction(_ sender: Any) {
         let loginVC = LoginVC(nibName: "LoginVC", bundle: nil)
         loginVC.modalPresentationStyle = .fullScreen
+        loginVC.delegate = self
         self.present(loginVC, animated: true, completion: nil)
     }
     
+}
+
+extension HomeVC: LoginVCDelegate{
+    func didLoginSuccess(loginVC: LoginVC, userName: String, pass passWord: String) {
+        TAlertView(alertTitle: "Đăng nhập thành công", sub: "Chúc mừng bạn đã đăng nhập thành công", alertMainText: "Tài khoản: \(userName) - Mật khẩu: \(passWord)", haveCancel: false, didAccept: nil, didCancel: nil).show()
+    }
 }
 
 // MARK: - CollectionView delegates, datasources

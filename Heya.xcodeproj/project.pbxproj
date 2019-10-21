@@ -15,6 +15,8 @@
 		D815EC7B23556FC900407968 /* MessageTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D815EC7923556FC900407968 /* MessageTabView.xib */; };
 		D815EC7F2355700900407968 /* AllFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D815EC7D2355700900407968 /* AllFriendsVC.swift */; };
 		D815EC802355700900407968 /* AllFriendsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D815EC7E2355700900407968 /* AllFriendsVC.xib */; };
+		D815EC842355D5AE00407968 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D815EC822355D5AE00407968 /* FriendCell.swift */; };
+		D815EC852355D5AE00407968 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D815EC832355D5AE00407968 /* FriendCell.xib */; };
 		D8286606235224FF00CBBB85 /* TAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8286605235224FF00CBBB85 /* TAlertView.xib */; };
 		D8292401234F417800EFBDC9 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82923FF234F417800EFBDC9 /* PostCollectionViewCell.swift */; };
 		D8292402234F417800EFBDC9 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8292400234F417800EFBDC9 /* PostCollectionViewCell.xib */; };
@@ -100,6 +102,8 @@
 		D815EC7923556FC900407968 /* MessageTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTabView.xib; sourceTree = "<group>"; };
 		D815EC7D2355700900407968 /* AllFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFriendsVC.swift; sourceTree = "<group>"; };
 		D815EC7E2355700900407968 /* AllFriendsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllFriendsVC.xib; sourceTree = "<group>"; };
+		D815EC822355D5AE00407968 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		D815EC832355D5AE00407968 /* FriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
 		D8286605235224FF00CBBB85 /* TAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAlertView.xib; sourceTree = "<group>"; };
 		D82923FF234F417800EFBDC9 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		D8292400234F417800EFBDC9 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -210,6 +214,15 @@
 				0FF449EAAF92FFD914D15B8A /* Pods_HeyaTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D815EC812355D59300407968 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				D815EC822355D5AE00407968 /* FriendCell.swift */,
+				D815EC832355D5AE00407968 /* FriendCell.xib */,
+			);
+			path = Elements;
 			sourceTree = "<group>";
 		};
 		D82923FE234F415100EFBDC9 /* Elements */ = {
@@ -369,6 +382,7 @@
 		D855B5B2234C2A50005A56D4 /* MessageVC */ = {
 			isa = PBXGroup;
 			children = (
+				D815EC812355D59300407968 /* Elements */,
 				D855B5B3234C2A7E005A56D4 /* MessageVC.swift */,
 				D855B5B4234C2A7E005A56D4 /* MessageVC.xib */,
 				D815EC7823556FC900407968 /* MessageTabView.swift */,
@@ -583,6 +597,7 @@
 				D85A50CB23501DD600612268 /* UserCollectionViewCell.xib in Resources */,
 				D8292402234F417800EFBDC9 /* PostCollectionViewCell.xib in Resources */,
 				D8EB84ED23545C7E00332169 /* LandMarkHeader.xib in Resources */,
+				D815EC852355D5AE00407968 /* FriendCell.xib in Resources */,
 				D855B5B6234C2A7F005A56D4 /* MessageVC.xib in Resources */,
 				D850BE39234B47A900DA944D /* LaunchScreen.storyboard in Resources */,
 				D815EC802355700900407968 /* AllFriendsVC.xib in Resources */,
@@ -748,6 +763,7 @@
 				D85A50DB2351B60200612268 /* SignUpVC.swift in Sources */,
 				D8D986732351E8E8007EA59A /* AppUtils.swift in Sources */,
 				D850BE6E234B4B7800DA944D /* BaseTabViewController.swift in Sources */,
+				D815EC842355D5AE00407968 /* FriendCell.swift in Sources */,
 				D855B5BA234C2A9C005A56D4 /* SettingVC.swift in Sources */,
 				D815EC7723555E3100407968 /* HistoryBO.swift in Sources */,
 				D85A50CA23501DD600612268 /* UserCollectionViewCell.swift in Sources */,

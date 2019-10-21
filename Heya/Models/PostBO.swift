@@ -26,11 +26,15 @@ class UserBO: NSObject{
     var age: String?
     var avatarURL: String?
     var info: String?
-    init(name: String, age: String, avatar: String, info: String) {
+    init(name: String?, age: String?, avatar: String?, info: String?) {
         self.name = name
         self.age = age
         self.avatarURL = avatar
         self.info = info
+    }
+    
+    func clone() -> UserBO{
+        return UserBO(name: self.name, age: self.age, avatar: self.avatarURL, info: self.info)
     }
 }
 
